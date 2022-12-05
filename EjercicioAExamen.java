@@ -7,8 +7,10 @@ public class EjercicioAExamen {
     Random ran = new Random();
     int size;
 
-    System.out.println("Introduce el tamaño de los vectores");
-    size = obj.nextInt();
+    do {
+      System.out.println("Introduce el tamaño de los vectores");
+      size = obj.nextInt();
+    } while (size < 1 || size > 100);
 
     int vecA[] = new int[size];
     int vecB[] = new int[size];
